@@ -1,0 +1,111 @@
+@media screen and (max-width: 1024px){
+    .header{
+        background-color: #000 ;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('../images/logo2.jpg') center center/cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.header{
+    background-color: #000 ;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('../images/logo2.jpg') center center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text-banner{
+    text-align: center;
+    margin: 150px;
+    color:#fff;
+}
+
+.text-banner h1{
+    color: #610094;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 7px #000;
+}
+
+.redes-sociales{
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+
+.redes-sociales a{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.redes-sociales a:hover{
+background: #3F0071;
+}
+
+
+@media screen and (max-width: 960px) {
+    .header{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('../images/logo2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+    .text-banner{
+        text-align: center;
+        margin: 150px;
+        color:#fff;
+    }
+
+    .header .text-banner{
+        text-align: center;
+    }
+
+    .text-banner h1{
+        text-align: center;
+        font-size: 50px;
+        color: #3F0071;
+        text-transform: uppercase;
+        margin: 5px 0;
+    }
+
+    .redes-sociales a{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 255, 255, 0.1);
+        color: #fff;
+        line-height: 1;
+        margin-right: 8px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+}
