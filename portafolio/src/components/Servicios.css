@@ -1,5 +1,6 @@
 .services{
     background: #000;
+
 }
 .services-card{
    
@@ -70,10 +71,17 @@ width: 100%;
 
 @media screen and (max-width: 960px){
     .services-card svg{
-        width: 3rem;
+        width: 4rem;
         fill: #3F0071;
         color: #3F0071;
         
+    }
+    .container-service{
+        margin-top: 2em;
+    }
+
+    .services-card{
+        margin-bottom: -7em;
     }
 
     .services-card h3{

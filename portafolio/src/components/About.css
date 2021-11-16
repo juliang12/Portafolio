@@ -27,6 +27,14 @@ filter: grayscale(1);
     
 }
 
+.titulo-right{
+    margin-bottom: .5em;
+}
+
+.subtitulo-right{
+    margin-bottom: .8em;
+}
+
 .grid{
     display: flex;
     flex-direction: row;
@@ -68,6 +76,7 @@ h1{
     .container{
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .grid{

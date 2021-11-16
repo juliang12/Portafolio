@@ -50,22 +50,24 @@ const ContactoPage = () => {
     return (
         <div className="contacto">
             <div className="container-contact">
-                <h3>¡Gracias por tu interés en ponerte en contacto!</h3>
-                <h4>si desea hablar sobre cómo trabajar juntos , me complace recibir su correo electrónico.</h4>
+                <h3 className="titulo-1">¡Gracias por tu interés en ponerte en contacto!</h3>
+                <h4 className="titulo-2">si desea hablar sobre cómo trabajar juntos , me complace recibir su correo electrónico.</h4>
                 <form onSubmit={handleSubmit} className="form-container">
-                    <label htmlFor="nombre">Nombre:</label>
+                    <label className="title" htmlFor="nombre">Nombre:</label>
                     <input 
+                    className="input-form"
                     type="text" 
                     name="nombre" 
                     id="" 
                     placeholder="Nombre"
                      onBlur={handleBlur} 
                      onChange={handleChange}
-                      value={form.name} 
+                      value={form.nombre} 
                       required/>
-                      {error.name && <p>{error.name}</p>}
-                    <label htmlFor="email">Email:</label>
+                      {error.nombre && <div className="form-error">{error.nombre}</div>}
+                    <label className="title" htmlFor="email">Email:</label>
                     <input 
+                    className="input-form"
                     type="email" 
                     name="email" 
                     id="" 
@@ -74,15 +76,18 @@ const ContactoPage = () => {
                      onChange={handleChange}
                      value={form.email} 
                       required/>
-                      {error.email && <p>{error.email}</p>}
-                    <input type="text" 
+                      {error.email && <div className="form-error">{error.email}</div>}
+                      <label className="title" htmlFor="email">Asunto:</label>
+                    <input
+                    className="input-form"
+                     type="text" 
                     name="subject" 
                     value={form.subject}  
                     placeholder="Asunto a tratar"
                     onBlur={handleBlur} 
                      onChange={handleChange}
                      required />
-                     {error.subject && <p>{error.subject}</p>}
+                     {error.subject && <div className="form-error">{error.subject}</div>}
                     <textarea name="comments" id="" cols="50" rows="5"
                            value={form.commments}  
                            
@@ -90,10 +95,10 @@ const ContactoPage = () => {
                             onChange={handleChange}
                             required >
                     </textarea>
-                    <input type="submit" value="Enviar" />
+                    <button className="btn-form" value="Enviar">Enviar</button>
                 </form>
                 {loading &&  <Loader/>}
-                {response && "Los datos han sido enviados"}
+                <div className="enviado">{response && "Los datos han sido enviados"}</div>
             </div>
         </div>
     )
