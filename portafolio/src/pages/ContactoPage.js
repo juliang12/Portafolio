@@ -1,5 +1,4 @@
-import { useState } from "react"
-import Loader from "../components/Loader"
+import Loader from "../components/Loader/Loader"
 import { useForm } from "../hooks/useForm"
 import "./ContactoPage.css"
 

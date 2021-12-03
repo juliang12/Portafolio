@@ -1,5 +1,5 @@
-import About from "../components/About"
-import Banner from "../components/Banner"
+import About from "../components/About/About"
+import Banner from "../components/Banner/Banner"
 
 const AboutPage = () => {
     return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Secciones from "../components/Secciones"
+import Secciones from "../components/Sections/Sections"
 import PortfolioData from "../data/PortfolioData"
 
 

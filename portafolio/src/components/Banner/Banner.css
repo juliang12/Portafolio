@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    .header{
+        background-color: #000 ;
+        background: #000 url('../../images/banner/stars.png') repeat top center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+
+    }
+
+
+
+
+.text-banner{
+    text-align: center;
+    margin: 150px;
+    color:#fff;
+    
+}
+
+.text-banner h2{
+    position: relative;
+    color: #333;
+    background: -webkit-linear-gradient(rgb(61, 12, 80), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.text-banner h1{
+    position: relative;
+    color: white;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 0px rgb(0, 0, 0, 0.2);
+    z-index: 3;
+
+}
+
+.redes-sociales{
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+
+.redes-sociales a{
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+}
+
+.redes-sociales a:hover{
+background: #3F0071;
+}
+
+    @keyframes move-clouds-back {
+        from {background-position: 0 0;}
+        to {background-position: 10000px 0;}
+    }
+
+    @keyframes move-twinkle-back {
+        from {background-position: 0 0;}
+        to {background-position: -10000px 5000px;}
+    }
+    
+    .header .twinklind, .clouds{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+
+    .twinklind{
+        background: transparent url("../../images/banner/twinkling.png") repeat top center;
+        z-index: 1;
+        animation: move-twinkle-back 200s linear infinite;
+    }
+
+    .clouds{
+        background: transparent url("../../images/banner/clouds.png") repeat top center;
+        z-index: 2;
+        opacity: .4;
+        animation: move-clouds-back 200s linear infinite;
+    }
+
+@media screen and (max-width: 960px) {
+    .header{
+        background-color: #000 ;
+        background: #000 url('../../images/banner/stars.png') repeat top center;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+
+    }
+
+    .header .twinklind, .clouds{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 600px;
+        display: block;
+    }
+
+    .text-banner{
+        text-align: center;
+        margin: 150px;
+        color:#fff;
+    }
+
+    .header .text-banner{
+        text-align: center;
+    }
+
+    .text-banner h1{
+        text-align: center;
+        font-size: 50px;
+        color: #3F0071;
+        text-transform: uppercase;
+        margin: 5px 0;
+    }
+
+    .text-banner h2{
+        font-size: 30px;
+    }
+    .redes-sociales a{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 255, 255, 0.1);
+        color: #fff;
+        line-height: 1;
+        margin-right: 8px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+}

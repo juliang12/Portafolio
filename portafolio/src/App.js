@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import './App.css';
-import About from './components/About';
-import Banner from './components/Banner';
-import Navbar from './components/Navbar';
-import Portfolio from './components/Portfolio';
-import AboutPage from './pages/AboutPage';
+import Navbar from '../src/components/Navbar/Navbar';
 import ContactoPage from './pages/ContactoPage';
 import Home from './pages/Home';
 import PortfolioPage from './pages/PortfolioPage';
@@ -14,9 +9,6 @@ import SeccionesPage from './pages/SeccionesPage';
 
 
 function App() {
-
-
-
 
   return (
     <>

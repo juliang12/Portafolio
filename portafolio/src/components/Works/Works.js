@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import PortfolioPage from '../pages/PortfolioPage'
-import Portfolio from './Portfolio'
-import Secciones from './Secciones'
+import PortfolioPage from '../../pages/PortfolioPage'
+import Secciones from '../Sections/Sections'
 
-const Trabajos = () => {
-    const trabajos = [{
+const Works = () => {
+    const works = [{
     id: 1,
     name: "Proyecto 1",
     imagen: "https://placeimg.com/400/400/nature",
@@ -30,7 +29,7 @@ const Trabajos = () => {
                 },
     ]
 
-    const [state, setState] = useState(trabajos)
+    const [state, setState] = useState(works)
     return (
         <div>
           <PortfolioPage data={state}/>
@@ -39,6 +38,6 @@ const Trabajos = () => {
     )
 }
 
-export default Trabajos
+export default Works
 
 

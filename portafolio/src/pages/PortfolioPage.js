@@ -1,7 +1,5 @@
 import { useState } from "react"
-import Banner from "../components/Banner"
-import Portfolio from "../components/Portfolio"
-import Secciones from "../components/Secciones"
+import Portfolio from "../components/Portfolio/Portfolio"
 import PortfolioData from "../data/PortfolioData"
 
 
