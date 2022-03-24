@@ -1,0 +1,35 @@
+{
+    "header":{
+        "portafolio": "Portafolio",
+        "home": "Inicio",
+        "contact": "Contacto",
+        "skills": "Mis Habilidades"
+    },
+    "about":{
+        "iam": "Soy Julian Garcia",
+        "paragraph": "Soy un Autodidacta que vive en Argentina y me dedico al Desarrollo FrontEnd Web y Movil, no lo puedo llamar trabajo porque me encanta lo que hago, estoy constantemente capacitandome, tomando cursos y aprendiendo nuevas tecnologias con el objetivo de poder ofrecer el mejor servicio."
+    },
+    "footer":{
+        "copyright": "Creado por Julian Garcia | 2021 todos los derechos reservados."
+    },
+    "appweather":{
+        "description": "Descripcion",
+        "paragraph": "ES UNA APP DEL CLIMA DESARROLADA EN REACT JS, EN EL CUAL MUESTRA EL CLIMA EN 6 HORARIOS DIFERENTES, CAMBIA SU BACKGROUND ACORDE AL TIEMPO",
+        "technology": "Tecnologia"
+
+    },
+    "fitness":{
+        "description":"Descripcion",
+        "paragraph": "ES UNA PAGINA WEB FITNESS DESARROLLADA EN REACT JS, ESTA ADAPTADA EN DISPOSITIVOS",
+        "technology": "Tecnologia"
+    },
+    "contact":{
+        "title": "¡GRACIAS POR TU INTERÉS EN PONERTE EN CONTACTO!",
+        "paragraph": "si desea hablar sobre cómo trabajar juntos , me complace recibir su correo electrónico.",
+        "name": "Nombre",
+        "email": "Email",
+        "business": "Asunto"
+
+    }
+
+}

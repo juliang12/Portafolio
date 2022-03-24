@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import Loader from "../components/Loader/Loader"
 import { useForm } from "../hooks/useForm"
 import "./ContactoPage.css"
@@ -45,14 +46,17 @@ const validationsForm = (form)=>{
 }
 
 const ContactoPage = () => {
+
+    const [t] = useTranslation("global")
+
     const {form, error, loading, response, handleChange, handleBlur, handleSubmit} = useForm(initialForm, validationsForm)
     return (
         <div className="contacto">
             <div className="container-contact">
-                <h3 className="titulo-1">¡Gracias por tu interés en ponerte en contacto!</h3>
-                <h4 className="titulo-2">si desea hablar sobre cómo trabajar juntos , me complace recibir su correo electrónico.</h4>
+                <h3 className="titulo-1">{t("contact.title")}</h3>
+                <h4 className="titulo-2">{t("contact.paragraph")}</h4>
                 <form onSubmit={handleSubmit} className="form-container">
-                    <label className="title" htmlFor="nombre">Nombre:</label>
+                    <label className="title" htmlFor="nombre">{t("contact.name")}:</label>
                     <input 
                     className="input-form"
                     type="text" 
@@ -64,7 +68,7 @@ const ContactoPage = () => {
                       value={form.nombre} 
                       required/>
                       {error.nombre && <div className="form-error">{error.nombre}</div>}
-                    <label className="title" htmlFor="email">Email:</label>
+                    <label className="title" htmlFor="email">{t("contact.email")}:</label>
                     <input 
                     className="input-form"
                     type="email" 
@@ -76,7 +80,7 @@ const ContactoPage = () => {
                      value={form.email} 
                       required/>
                       {error.email && <div className="form-error">{error.email}</div>}
-                      <label className="title" htmlFor="email">Asunto:</label>
+                      <label className="title" htmlFor="email">{t("contact.business")}:</label>
                     <input
                     className="input-form"
                      type="text" 

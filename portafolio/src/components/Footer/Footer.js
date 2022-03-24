@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import "../Footer/Footer.css"
 
 const Footer = () => {
+    const [t] = useTranslation("global")
     return (
         <footer>
-            <span>Creado por Julian Garcia | <span className="far fa-copyright"> 2021 todos los derechos reservados.</span></span>
+            <span>{t("footer.copyright")}</span>
         </footer>
     )
 }

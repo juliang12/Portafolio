@@ -1,0 +1,33 @@
+{
+    "header":{
+        "portafolio": "Portfolio",
+        "home": "Home",
+        "contact": "Contact",
+        "skills": "Skills"
+    },
+    "about":{
+        "iam": "I am Julian Garcia",
+        "paragraph": "I am a self-taught person who lives in Argentina and I dedicate myself to Web and Mobile FrontEnd Development, I cannot call it work because I love what I do, I am constantly training myself, taking courses and learning new technologies with the aim of being able to offer the best service."
+    },
+    "footer":{
+        "copyright": "Created by Julian Garcia | 2021 all rights reserved."
+    },
+    "appweather":{
+        "description": "Description",
+        "paragraph": "IT IS A WEATHER APP DEVELOPED IN REACT JS, IN WHICH IT SHOWS THE WEATHER IN 6 DIFFERENT SCHEDULES, CHANGES ITS BACKGROUND ACCORDING TO THE TIME",
+        "technology": "Technology"
+
+    },
+    "fitness":{
+        "description":"Description",
+        "paragraph": "IT IS A FITNESS WEB PAGE DEVELOPED IN REACT JS, IT IS ADAPTED IN MOBILE DEVICES",
+        "technology": "Technology"
+    },
+    "contact":{
+        "title": "THANK YOU FOR YOUR INTEREST IN GETTING IN CONTACT!",
+        "paragraph": "If you want to talk about how to work together, I'm glad to receive your email.",
+        "name": "Name",
+        "email": "Email",
+        "business": "Business"
+    }
+    }

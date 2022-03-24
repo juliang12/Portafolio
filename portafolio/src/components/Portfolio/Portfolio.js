@@ -4,9 +4,13 @@ import { useParams } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 
 const Portfolio = ({items}) => {
+const [t] = useTranslation("global")
+
   useEffect(()=>{
     Aos.init({ duration: 2000})
   },[])
@@ -26,8 +30,8 @@ const Portfolio = ({items}) => {
                 data-aos-mirror="true"
                 data-aos-once="true"
                 className="titulo-1"><h1>{item.name}</h1></h1>
-                <div className="description"><h2>DESCRIPCION:</h2><p>{item.description}</p></div>
-                <div className="tecnologias"><h2>TECNOLOGIAS:</h2>{item.tecnologias}</div>
+                <div className="description"><h2>{t("appweather.description")}:</h2><p>{t(item.description)}</p></div>
+                <div className="tecnologias"><h2>{t("appweather.technology")}:</h2>{item.tecnologias}</div>
                 <h2>GITHUB:</h2><div className="github">{item.github}</div>
               </div>
               <div className="gallery-img">
