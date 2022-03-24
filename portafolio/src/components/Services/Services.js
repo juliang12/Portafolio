@@ -1,10 +1,12 @@
+import { useTranslation } from "react-i18next"
 import "../Services/Services.css"
 
 
 const Services = () => {
+    const [t] = useTranslation("global")
     return (
        <section className="services">
-           <h2 className="section-title1">Mis Habilidades</h2>
+           <h2 className="section-title1">{t("header.skills")}</h2>
            <div
            data-aos="zoom-in"
            data-aos-mirror="true"

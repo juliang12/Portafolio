@@ -1,0 +1,18 @@
+[
+    {
+        "code": "es",
+        "flag_1x1": "./flag-icons/flags/1x1/es.svg",
+        "flag_4x3": "./flag-icons/flags/1x1/es.svg",
+        "iso": true,
+        "name": "Español",
+        "value": "es"
+      },
+      {
+        "code": "gb",
+        "flag_1x1": "https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png",
+        "flag_4x3": "https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png",
+        "iso": true,
+        "name": "English",
+        "value": "en"
+      }
+    ]

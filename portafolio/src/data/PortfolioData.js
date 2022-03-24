@@ -22,7 +22,7 @@ const PortfolioData = () => [
     imagen1: weather1,
     imagen2: weather2,
     imagen3: weather3,
-    description: "Es una App del clima desarrolada en React js, en el cual muestra el clima en 6 horarios diferentes, cambia su background acorde al tiempo",
+    description: "appweather.paragraph",
     tecnologias: "React, HTML, CSS, Javascript",
     github: <a href="https://github.com/juliang12/weather"><i class="fab fa-github"></i></a>,
 
@@ -33,7 +33,7 @@ const PortfolioData = () => [
         imagen1: web1,
         imagen2: web2,
         imagen3: web3,
-        description: "Es una Pagina web Fitness desarrollada en React js, esta adaptada en dispositivos moviles",
+        description: "fitness.paragraph",
         tecnologias: "React, HTML, CSS, Javascript",
         github: <a href="https://github.com/juliang12/webFit"><i class="fab fa-github"></i></a>,
         },

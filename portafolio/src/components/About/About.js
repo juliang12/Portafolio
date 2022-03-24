@@ -1,10 +1,11 @@
 import React from 'react'
 import "../About/About.css"
 import Programmer from "../../images/image2pro.jpg"
+import { useTranslation } from 'react-i18next'
 
 
 const About = () => {
-
+    const [t] = useTranslation("global")
     return (
         <div className="container">
             <div className="grid">
@@ -18,9 +19,9 @@ const About = () => {
                 data-aos-once="true"
                 data-aos-mirror="true"
                  className="right">
-                    <h1 className="titulo-right">Soy Julian Garcia</h1>
+                    <h1 className="titulo-right">{t("about.iam")}</h1>
                     <h2 className="subtitulo-right">Web Developer</h2>
-                    <p>Soy un Autodidacta que vive en Argentina y me dedico al Desarrollo FrontEnd Web y Movil, no lo puedo llamar trabajo porque me encanta lo que hago, estoy constantemente capacitandome, tomando cursos y aprendiendo nuevas tecnologias con el objetivo de poder ofrecer el mejor servicio. </p>
+                    <p>{t("about.paragraph")}</p>
                     
                 </div>
             </div>
