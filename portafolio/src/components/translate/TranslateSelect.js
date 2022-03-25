@@ -110,11 +110,11 @@ const TranslateSelect = () => {
         getOptionValue={ ( { name } ) => name }
         getOptionLabel={ ( value ) => ( createLabel( value ) ) }
         defaultValue={ {
-            code: 'gb',
-            flag_1x1: 'flags/1x1/gb.svg',
-            flag_4x3: 'flags/4x3/gb.svg',
+            code: 'es',
+            flag_1x1: 'flags/1x1/es.svg',
+            flag_4x3: 'flags/4x3/es.svg',
             iso: true,
-            name: 'English'
+            name: 'Español'
         } }
         onChange={ handleChange( { i18n } ) }
     />

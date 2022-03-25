@@ -1,17 +1,18 @@
 import weather1 from "../images/appweather/desktop.jpg"
 import weather2 from "../images/appweather/movil-1.jpg"
 import weather3 from "../images/appweather/movil-2.jpg"
-import weather4 from "../images/appweather/weather4.png"
-import weather5 from "../images/appweather/weather5.png"
-import web1 from "../images/webFit/img1.png"
-import web2 from "../images/webFit/movil1.jpg"
-import web3 from "../images/webFit/web2.jpg"
+import web1 from "../images/webresponsive/img1.jpg"
+import web2 from "../images/webresponsive/img2.jpg"
+import web3 from "../images/webresponsive/movil-2.jpg"
+import web4 from "../images/webresponsive/movil1.jpg"
 import app1 from "../images/ecommerce/app1.png"
 import app2 from "../images/ecommerce/app2.png"
 import app3 from "../images/ecommerce/app3.png"
 import app4 from "../images/ecommerce/app4.png"
 import app5 from "../images/ecommerce/app5.png"
-
+import preview1 from "../images/preview/preview1.jpg"
+import preview2 from "../images/preview/preview2.jpg"
+import preview3 from "../images/preview/preview3.jpg"
 
 
 
@@ -19,6 +20,7 @@ const PortfolioData = () => [
          {
     id: 1,
     name: "AppWeather",
+    preview: preview1,
     imagen1: weather1,
     imagen2: weather2,
     imagen3: weather3,
@@ -29,10 +31,12 @@ const PortfolioData = () => [
     },
     {
         id: 2,
-        name: "Web Fitness",
+        name: "Web Responsive",
+        preview: preview2,
         imagen1: web1,
         imagen2: web2,
         imagen3: web3,
+        imagen4: web4,
         description: "fitness.paragraph",
         tecnologias: "React, HTML, CSS, Javascript",
         github: <a href="https://github.com/juliang12/webFit"><i class="fab fa-github"></i></a>,
@@ -40,6 +44,7 @@ const PortfolioData = () => [
         {
             id: 3,
             name: "App Hamburguesas",
+            preview: preview3,
             imagen1: app1,
             imagen2: app2,
             imagen3: app3,

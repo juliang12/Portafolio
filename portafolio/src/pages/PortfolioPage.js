@@ -5,6 +5,7 @@ import PortfolioData from "../data/PortfolioData"
 
 const PortfolioPage = () => {
   const [items, setItems] = useState(PortfolioData);
+  console.log(items)
     return (
         <div className="portfolio">
           <div className="title">
