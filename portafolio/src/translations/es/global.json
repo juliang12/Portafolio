@@ -20,7 +20,7 @@
     },
     "fitness":{
         "description":"Descripcion",
-        "paragraph": "ES UNA PAGINA WEB FITNESS DESARROLLADA EN REACT JS, ESTA ADAPTADA EN DISPOSITIVOS",
+        "paragraph": "ES UNA PAGINA WEB RESPONSIVE DESARROLLADA EN REACT JS, ESTA ADAPTADA EN DISPOSITIVOS",
         "technology": "Tecnologia"
     },
     "contact":{
@@ -28,7 +28,11 @@
         "paragraph": "si desea hablar sobre cómo trabajar juntos , me complace recibir su correo electrónico.",
         "name": "Nombre",
         "email": "Email",
-        "business": "Asunto"
+        "business": "Asunto",
+        "yourEmail": "Direccion de correo",
+        "yourName": "Nombre",
+        "description": "Asunto a tratar",
+        "send": "Enviar"
 
     }
 

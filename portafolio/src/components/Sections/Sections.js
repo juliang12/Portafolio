@@ -4,43 +4,39 @@ import Portfolio from "../Portfolio/Portfolio"
 import Trabajos from "../Works/Works"
 import "../Sections/Sections.css"
 import {motion} from "framer-motion"
+import { useTranslation } from 'react-i18next';
 
-const animationSections = {
-  hidden: {
-      x: 100,
-      opacity: 0,
 
-  },
-  show: {
-      x: 0,
-      opacity: 1,
-      transition: {
-          duration: 1,
-          ease: "easeInOut",
-      }
-  }
-}
 
 const Sections = ({data}) => {
+  const [t] = useTranslation('global')
+
 console.log(data)
     return (  
-      <section className="seccion">
+        <div className='box'> 
         {
           data.map((item)=>(
-            <ul key={item.id} className="container">
-            <motion.li 
-             variants={animationSections}
-             initial="hidden"
-             animate="show"
+            <div className="container">
+            <ul key={item.id} >
+            <li 
               key={item.id} className="lista">
               <Link data-text={item.name} to={`/portafolio/${item.id}`}>
-                {item.name}
+                <div className='image-box'>
+                  <img className='images' src={item.preview} alt="" />
+                  </div>
+                  <div className="details">
+                    <div className="content">
+                    <h2>{t(item.name)}</h2>
+                    <p>{t(item.description)}</p>
+                    </div>
+                    </div>     
               </Link>
-            </motion.li>
+            </li>
             </ul>
+            </div>
           ))
         }
-      </section>
+        </div>
     )
 }
 

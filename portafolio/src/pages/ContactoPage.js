@@ -62,7 +62,7 @@ const ContactoPage = () => {
                     type="text" 
                     name="nombre" 
                     id="" 
-                    placeholder="Nombre"
+                    placeholder={t("contact.yourName")}
                      onBlur={handleBlur} 
                      onChange={handleChange}
                       value={form.nombre} 
@@ -74,7 +74,7 @@ const ContactoPage = () => {
                     type="email" 
                     name="email" 
                     id="" 
-                    placeholder="Direccion de correo"
+                    placeholder={t("contact.yourEmail")}
                     onBlur={handleBlur} 
                      onChange={handleChange}
                      value={form.email} 
@@ -86,7 +86,7 @@ const ContactoPage = () => {
                      type="text" 
                     name="subject" 
                     value={form.subject}  
-                    placeholder="Asunto a tratar"
+                    placeholder={t("contact.description")}
                     onBlur={handleBlur} 
                      onChange={handleChange}
                      required />
@@ -98,7 +98,7 @@ const ContactoPage = () => {
                             onChange={handleChange}
                             required >
                     </textarea>
-                    <button className="btn-form" value="Enviar">Enviar</button>
+                    <button className="btn-form" value="Enviar">{t("contact.send")}</button>
                 </form>
                 {loading &&  <Loader/>}
                 <div className="enviado">{response && "Los datos han sido enviados"}</div>
