@@ -33,5 +33,10 @@
         "yourName": "Name",
         "description": "matter to be discussed",
         "send": "Send"
+    },
+    "markets":{
+        "title": "Form Multi step",
+        "paragraph": "It's a multi-step form that I partnered with Digichanges to develop with ReactJS.",
+        "technology": "Technology"
     }
     }

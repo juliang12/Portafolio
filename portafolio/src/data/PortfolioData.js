@@ -13,7 +13,13 @@ import app5 from "../images/ecommerce/app5.png"
 import preview1 from "../images/preview/preview1.jpg"
 import preview2 from "../images/preview/preview2.jpg"
 import preview3 from "../images/preview/preview3.jpg"
-
+import preview4 from "../images/preview/previewMarket.jpg"
+import form from "../images/form/markets.jpg"
+import form1 from "../images/form/markets1.jpg"
+import form2 from "../images/form/markets2.jpg"
+import form3 from "../images/form/markets3.jpg"
+import form4 from "../images/form/movil.jpg"
+import form5 from "../images/form/movil2.jpg"
 
 
 const PortfolioData = () => [
@@ -54,6 +60,20 @@ const PortfolioData = () => [
             tecnologias: "React, HTML, CSS, Javascript",
             github: <a href="https://appecommerce.netlify.app/"><i class="fab fa-react"></i></a>,
             },
+            {
+                id: 4,
+                name: "Form Multi step",
+                preview: preview4,
+                imagen1: form,
+                imagen2: form1,
+                imagen3: form2,
+                imagen4: form3,
+                imagen5: form4,
+                imagen6: form5,
+                description: "markets.paragraph",
+                tecnologias: "React, HTML, CSS, Javascript",
+                // github: <a href="https://appecommerce.netlify.app/"><i class="fab fa-react"></i></a>,
+                },
             
     ]
 

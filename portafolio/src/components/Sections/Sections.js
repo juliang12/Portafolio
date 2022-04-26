@@ -1,9 +1,6 @@
 import React from 'react';
-import { Link, useParams } from "react-router-dom"
-import Portfolio from "../Portfolio/Portfolio"
-import Trabajos from "../Works/Works"
+import { Link } from "react-router-dom"
 import "../Sections/Sections.css"
-import {motion} from "framer-motion"
 import { useTranslation } from 'react-i18next';
 
 

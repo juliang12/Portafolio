@@ -17,6 +17,7 @@
 
 
 .text-banner{
+    height: 100%;
     text-align: center;
     margin: 150px;
     color:#fff;
@@ -50,6 +51,8 @@
 }
 
 .redes-sociales{
+    width: 100%;
+    height: 100%;
     margin-top: 40px;
     display: flex;
     
@@ -62,13 +65,14 @@
     font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
     line-height: 1;
     margin-right: 8px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    top: 350px;
     z-index: 3;
 }
 
@@ -110,19 +114,44 @@ background: #3F0071;
         animation: move-clouds-back 200s linear infinite;
     }
 
+    .svgLogo{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible !important;
+        z-index: 3;
+    }
+
 @media screen and (max-width: 960px) {
+
+    .svgLogo{
+        position: absolute;
+        display: flex;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible !important;
+        z-index: 3;
+    }
     .header{
         background-color: #000 ;
         background: #000 url('../../images/banner/stars.png') repeat top center;
         background-size: cover;
         width: 100%;
-        height: 600px;
+        height: 650px;
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 0;
 
     }
+
 
     .header .twinklind, .clouds{
         position: absolute;

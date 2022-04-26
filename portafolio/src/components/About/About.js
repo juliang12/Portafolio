@@ -9,15 +9,19 @@ const About = () => {
     return (
         <div className="container">
             <div className="grid">
-                <div data-aos="zoom-in-left" 
+            <div className="container-title">
+      <h1 data-aos="fade-right" className="section-title1">
+        About
+      </h1>
+      <div data-aos="fade-right" className="bar-style"></div>
+      </div>
+                {/* <div data-aos="zoom-in-left" 
                 data-aos-mirror="true"
                 data-aos-once="true"
                 className="left">
                 <img src={Programmer} alt="Programmer" />
-                </div>
+                </div> */}
                 <div data-aos="zoom-in"
-                data-aos-once="true"
-                data-aos-mirror="true"
                  className="right">
                     <h1 className="titulo-right">{t("about.iam")}</h1>
                     <h2 className="subtitulo-right">Web Developer</h2>
