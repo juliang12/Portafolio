@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 import { Link } from "react-router-dom";
-import Logo from "../../images/logo-new1.svg";
 import TranslateSelect from "../translate/TranslateSelect";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import {FaBars} from "react-icons/fa"
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

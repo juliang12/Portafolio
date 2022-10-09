@@ -20,6 +20,12 @@ import form2 from "../images/form/markets2.jpg"
 import form3 from "../images/form/markets3.jpg"
 import form4 from "../images/form/movil.jpg"
 import form5 from "../images/form/movil2.jpg"
+import nails from "../images/appnails/0.png"
+import nails1 from "../images/appnails/1.png"
+import nails2 from "../images/appnails/2.png"
+import nails3 from "../images/appnails/3.png"
+import nails4 from "../images/appnails/4.png"
+import nailspreview from "../images/appnails/previewnails.jpg"
 
 
 const PortfolioData = () => [
@@ -49,16 +55,16 @@ const PortfolioData = () => [
         },
         {
             id: 3,
-            name: "App Hamburguesas",
-            preview: preview3,
-            imagen1: app1,
-            imagen2: app2,
-            imagen3: app3,
-            imagen4: app4,
-            imagen5: app5,
-            description: "Es una APP Ecommerce de Hamburguesas, contiene un carrito de compras y una cuenta de usuarios.",
-            tecnologias: "React, HTML, CSS, Javascript",
-            github: <a href="https://appecommerce.netlify.app/"><i class="fab fa-react"></i></a>,
+            name: "NailsApp",
+            preview: nailspreview,
+            imagen1: nails,
+            imagen2: nails1,
+            imagen3: nails2,
+            imagen4: nails3,
+            imagen5: nails4,
+            description: "Es una APP desarrollada con React js para la interface de usuarios y typescript, framer motion para las animaciones y css module para los estilos",
+            tecnologias: "React, HTML, CSS, Typescript",
+            github: <a href="https://github.com/juliang12/appnails"><i class="fab fa-react"></i></a>,
             },
             {
                 id: 4,
