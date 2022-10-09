@@ -53,8 +53,8 @@ const ContactoPage = () => {
     return (
         <div className="contacto">
             <div className="container-contact">
-                <h3 className="titulo-1">{t("contact.title")}</h3>
-                <h4 className="titulo-2">{t("contact.paragraph")}</h4>
+                <h3 className="titulo-contact-1">{t("contact.title")}</h3>
+                <h4 className="titulo-contact-2">{t("contact.paragraph")}</h4>
                 <form onSubmit={handleSubmit} className="form-container">
                     <label className="title" htmlFor="nombre">{t("contact.name")}:</label>
                     <input 

@@ -2,6 +2,9 @@
     width: 40%;
     padding: 5px;
 }
+.container{
+    background-color: #000;
+}
 
 .container .left img{
 display: block;
@@ -17,6 +20,7 @@ filter: grayscale(1);
     align-content: center;
     align-items: center;
     text-align: center;
+    color: #fff;
 }
 
 .container .right{
@@ -24,6 +28,7 @@ filter: grayscale(1);
     margin-top: 20px ;
     letter-spacing: 1px;
     text-align: center;
+    color: #fff;
     
 }
 
@@ -37,10 +42,11 @@ filter: grayscale(1);
 
 .grid{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items:center;
+    padding-bottom: 50px;
 }
 
 a{
@@ -48,7 +54,9 @@ a{
 }
 
 h1{
-    color:#150050;
+    font-size: 5em;
+    color:#5f0261;
+    text-transform: uppercase;
 }
 
 
@@ -68,6 +76,15 @@ h1{
 }
 
 @media screen and (max-width: 960px){
+    .container{
+        height: 100%;
+        background-color: #000;
+    }
+    h1{
+        font-size: 3em;
+        color:#5f0261;
+        text-transform: uppercase;
+    }
 
     .container .left{
         width: 18rem;
@@ -76,12 +93,12 @@ h1{
     .container{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
     }
 
     .grid{
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .right{
@@ -90,4 +107,5 @@ h1{
 .boton{
     margin: 15px 15px;
 }    
+
 }

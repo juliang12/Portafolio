@@ -12,23 +12,25 @@
 }
 
 .section-title1{
+    font-size: 50px;
     padding-top: 50px;
     text-align: center;
     color: darkgrey;
    background-color:#000 ;
+   text-transform: uppercase;
 }
 .services-card h3{
     color: #fff;
 }
 .services-card svg{
     width: 100px;
-    fill: #3F0071;
-    color: #3F0071;
+    height: 150px;
+    fill: #5f0261;
+    color: #5f0261;
     
 }
 
 .container-service{
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -39,21 +41,13 @@
 }
 
 .container-service .services-card{
-    position: relative;
     width: 275px;
     height: 275px;
     overflow: hidden;
     transition: 0.5s;
 }
 
-.container-service .services-card:hover{
-   z-index: 1;
-   transform: scale(1.25);
-   box-shadow: 0 25px 40 rgba(0, 0, 0, .5);
-}
-
 .container-service .services-card{
-    position: relative;
     width: 275px;
     height: 275px;
     overflow: hidden;
@@ -62,6 +56,7 @@
 
 .services .container-service{
     width: 100%;
+    height: 100%;
  
 }
 
@@ -69,14 +64,33 @@
     color: #3F0071;
 }
 
+.container-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12rem 0;
+}
+
+.bar-style{
+    width: 50%;
+    height: 20px;
+    background-color: #5f0261;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 960px){
     .services-card svg{
-        width: 4rem;
-        fill: #3F0071;
-        color: #3F0071;
+        width: 5rem;
+        fill: #5f0261;
+        color: #5f0261;
         
     }
     .container-service{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
         margin-top: 2em;
     }
 
@@ -86,6 +100,14 @@
 
     .services-card h3{
         font-size: .8rem;
+    }
+
+    .section-title1{
+        font-size: 40px;
+    }
+
+    .container-title{
+        padding: 6rem 0;
     }
 }
 
